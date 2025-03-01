@@ -1,0 +1,101 @@
+<!-- Form All -->
+<!-- Normal -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7.html</title>
+  </head>
+  <body>
+    <h2>Course Registration Form</h2>
+    <form>
+    <b>First Name : </b><input type="text" name="textbox1" size="20"><br><br>
+      <b>Last Name :</b> <input type="text" name="textbox2"><br><br>
+      <b>Password : </b><input type="password" name="pwd"><br><br>
+    </form>
+  </body>
+</html>
+
+
+
+<!-- Full Form -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>7.html</title>
+  </head>
+  <body>
+    <h2>Course Registration Form</h2>
+    <form>
+      <fieldset style="width: 25%;">
+      <legend>Personal Information</legend>
+      <label for="firstname">First Name : </label><input type="text" name="textbox1" size="20"><br/><br/>
+
+      <b>Last Name :</b> <input type="text" name="textbox2"><br/><br/>
+
+      <b>Password : </b><input type="password" name="pwd"><br><br/>
+      
+      <label for="email">Email: </label><input type="email" name="email" id="email"><br> <br>
+
+      <b>Gender : </b><input type="radio" name="gender" value="male" checked="male">Male 
+      <input type="radio" name="gender" value="female">Female 
+      <input type="radio" name="gender" value="others">Others<br/><br/>
+      
+      <label for="dob">Date of Birth: </label><input type="date" name="dob" id="dob"><br> <br>
+         
+      <label for="photo">Choose your Photo: </label><input type="file" name="photo" id="photo"><br> <br>
+
+      <b>Religion : </b><input type="checkbox" name="c1" value="islam">Islam
+      <input type="checkbox" name="c2" value="hindu">Hindu
+      <input type="checkbox" name="c3" value="Christian">Christian
+      <input type="checkbox" name="c4" value="others">Others
+      </fieldset><br/>
+
+
+      <label for="Board">Board : </label>
+      <select name="Board">
+        <option value="Dhaka Board">Dhaka Board</option>
+        <option value="Rajshahi Board">Rajshahi Board</option>
+        <option value="Comilla Board">Comilla Board</option>
+        <option value="Chittagong Board">Chittagong Board</option>
+      </select><p>
+
+      <b>Comment :</b><p>
+      <textarea name="t1" rows="7" cols="40" >Please write something
+        
+      </textarea><br/>
+
+      <input type="submit" value="SUBMIT">
+      <button type="submit">Submit</button>
+      <input type="reset" value="RESET">
+    </form>
+  </body>
+</html>
+
+
+
+
+<!-- Form- attibute +required +datalist -->
+<!doctype html>
+<html>
+  <body>
+    <form>
+      <datalist id="names">
+        <option value="Wasif Rahman"> Wasif Rahman</option>
+        <option value="Wasia Rahman"> Wasia Rahman</option>
+        <option value="Aasi"> Aasi</option>
+
+      </datalist>
+
+      <p><input type="text" list ="names" placeholder="username" required pattern="[a-zA-Z0-9]+" ></p>
+      <p><input type="email" placeholder="Enter your email"required ></p>
+      <p><input type="submit" value="sing up" ></p>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+

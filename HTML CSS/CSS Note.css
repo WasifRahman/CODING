@@ -1,0 +1,77 @@
+Text{
+    text-align 
+    text-decoration (underline, overline)
+    text-indent (50px first line koto dur theke suru hobe)
+    text-transform (capitalize - Sob each word er first letter capital hobe, uppercase- sob letter capital)
+    text-shadow (3px 4px grey; = (X Y color))
+    ..text-overflow: (clip,ellipsis)word-spacing (10px word er moddhe space) 
+    overflow: scroll; (hidden, visible) mane div er baire gele scroll dibe 
+    opacity: 0.5; (0 theke 1 er moddhe)
+}
+
+
+font{
+    color 
+    font-size (%,px,rem)
+    font-family (Google fonts)
+    font-style (italic)
+    font-weight (light,bold)
+    ..font variant (small caps)
+}
+
+
+@border{
+    #border:2px solid Tomato;(width style color)
+    border-left:..border-right: 5px green solid (border:none;)
+    border-radius:10px 
+    
+    #padding: 30px; padding property defines a padding (space) between the text and the border.
+    #margin: 50px; sob dik theke 50 px (10px 30px)means upore niche 10, left right e 30
+    max-width: 500px; /* page short korle no prob*/
+    #margin: 0 auto; (middle e anbe)
+    cursor:(pointer)
+    float: (left or right)
+    #display: inline-block; /*inline dile??*/ (div inline na)
+    box-sizing: border-box;
+    border-collapse: collapse; (line mishe jabe, table e lage)
+    resize:none;(textarea er jonno)
+    vertical-align: middle;(table e th ta middle e jabe text-align er moto)
+    transition: width 0.5s ease-in-out;
+}
+
+background-image{
+    background-image: url("YT cover art.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+linearGradient, radialGradient{
+    background-image:linear-gradient(to right, red, green);
+
+    background-image:radial-gradient(circle, red, green, blue);
+}
+#clear:both; (to clear div)
+.class::after or before{
+    content:""; (ja extra jog korba first e or last e)
+}
+position: relative, absolute, fixed,static
+visibility:hidden;
+z-index: 1; /*sobar upore thakbe... dui ta div aktar upore arekta thakle eta lage */
+
+list{  
+    list-style-type: circle;
+    list-style-position: inside;
+    list-style-image: url(checked.png);
+}
+
+
+
+
+
+
+ 
+
+

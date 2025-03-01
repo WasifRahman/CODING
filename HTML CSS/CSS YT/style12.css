@@ -1,0 +1,11 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+  background-image: url("YT cover art.jpg");
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-position: left;
+  background-attachment: fixed;
+  background-size: cover;
+}

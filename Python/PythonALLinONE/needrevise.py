@@ -1,13 +1,12 @@
 #Important
 
-""" print(r"c:\docs\\navin") #Raw string
+print(r"c:\docs\\navin") #Raw string
 print(name[1:])
-print(len(myname)) """
-""" Exercise = nums. append/sort....etc """
+print(len(myname))
+#Exercise = nums. append/sort....etc 
 
 
 
-                #"""3"""
 print(5 // 2) #integer Division
 print((8+2)*3)
 print(2**3)
@@ -22,7 +21,7 @@ print("c:\docs\navin") # Don't want this
 print(r"c:\docs\navin") #Raw string or below
 print("c:\docs\\navin")
 
-             #"""4"""
+
 x=2
 print(x+3)
 y=3

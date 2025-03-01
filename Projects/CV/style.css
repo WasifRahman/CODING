@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #EEE;
+  font-family: 'Crimson Text', serif;
+}
+.container{
+  max-width: 1000px;
+  background-color: #E4F9F5;
+  margin: auto;
+  padding: 20px;
+}
+
+.profile-img {
+  height: 120px; 
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 50%;
+  float: left;
+}
+
+.header-bio{
+  float: left;
+  padding: 30px;
+}
+h1, h2, h3, h4, h5, h6{
+  color: #11999e;
+}
+.header-contact{
+  float: right;
+  padding: 30px;
+}
+.header-contact a{
+  text-decoration: none;
+  color: #11999e;
+  font-weight: bold;
+}
+.header-contact a:hover{
+  text-decoration: underline;
+  color: tomato;
+}
+.div-clear{
+  clear: both;
+}
+
+hr{
+  border: solid black 3px;
+  width: 100%;
+  margin: 20px auto;
+  border-bottom: none;
+}
+/*Personal section*/
+.left-div{
+  margin-top: 10px;
+  width: 30%;
+  float: left;
+}
+.right-div{
+  margin-top: 10px;
+  width: 60%;
+  float: right;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.common-hr{
+  border: solid black 1px;
+  border-bottom: none;
+  width: 100%;
+  margin: auto 0px;
+}
+.link1 a{
+  text-decoration: none;
+  color: green;
+}
+.link1 a:hover{
+  text-decoration: underline;
+  color: tomato;
+}
+/*education section*/
+.edu-template-left{
+  float: left;
+  width: 50%;
+}
+
+.edu-template-right{
+  float: right;
+  width: 45%;
+}
+/*footer style*/
+.footer{
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+.footer p{
+  color: white;
+  margin-top: 20px;
+}
+.footer a:hover{
+  color: tomato;
+}
+.footer p:hover{
+  color: skyblue;
+}
+

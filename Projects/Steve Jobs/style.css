@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  height: 250px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+}
+
+p{
+  font-family: 'Fredericka the Great', cursive;
+  color: cadetblue;
+  font-weight: lighter;
+  font-size: xx-large;
+  text-align: center;
+}
+h1{
+  opacity: 0.3;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 1px;
+  font-size: 3rem;
+}
+
+.container{
+  max-width: 1500px;
+  background-color: #E4F9F5;
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.div-left{
+  float: left;
+  width: 60%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.common-hr{
+  border-bottom: none;
+}
+.table-type{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  font-family: 'IM Fell French Canon', serif;
+}
+.table-type tr:hover{
+  background-color: darkgrey;
+}
+.table-type td{
+  padding: 5px;
+}
+.div-clear{
+  clear: both;
+}
+tr:nth-child(even){
+  background-color: #ddd;
+}
+.for-td{
+  background-color: white;
+  padding: 6px;
+  margin-right: 5px;
+}
+
+.for-link{
+  color: blueviolet;
+  text-decoration: none;
+}
+.for-link:hover{
+  color: tomato;
+  text-decoration: underline;
+}
+.div-right{
+  float: right;
+  width: 40%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.nut{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border-collapse: collapse;
+  border-right: none;
+  border-left: none;
+}
+
+
+.footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+

@@ -1,0 +1,69 @@
+body{
+    font-family: sans-serif;
+    background-color: #153467;
+}
+.container{
+    margin: 100px auto;
+    background: #231e39;
+    border-radius: 5px;
+    color: #ccc;
+    width: 350px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .75);
+}
+.profile{
+    background: url(https:cdn.pixabay.com/photo/2018/09/16/22/08/software-3682509_1280.jpg);
+    height: 160px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+.profile-img{
+    height: 120px;
+    width: 120px;
+    border-radius: 150px;
+    margin: 93px 0 0 -175px;
+    padding: 7px;
+    background: #292343;
+}
+.profile-name{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 27px 0 0 120px;
+}
+.about{
+    margin-top: 35px;
+    line-height: 21px;
+}
+button{
+    margin-left: 10px 0 40px 0;
+}
+.msg-btn, .follow-btn{
+    background: #03bfbc;
+    border: 1px solid #03bfbc;
+    padding: 10px 25px;
+    color: #231e39;
+    border-radius: 3px;
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+}
+.follow-btn{
+    margin-left: 10px;
+    background: transparent;
+    color: #02899c;
+}
+.follow-btn:hover{
+    transition: .5s;
+    background: #03bfbc;
+    color: #231e39;
+}
+.container i{
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.container i:hover{
+    color: #03bfbc;
+}

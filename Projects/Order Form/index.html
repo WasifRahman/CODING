@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Form</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: tomato; text-decoration: underline">
+      Land Of Boxes Order Form
+    </h1>
+    <div align="center">
+      <form style="width: 25%">
+        <fieldset>
+          <legend>Customer Information</legend>
+          <label for="name">Name: </label><input type="text" required /> <br />
+          <br />
+          <label>Email: </label><input type="email" required /> <br />
+          <br />
+          <label>Address: </label> <br /><textarea
+            placeholder="Write down your address plz."
+            rows="3"
+            cols="30"
+          ></textarea>
+          <br />
+          <br />
+          <label>Postcode: </label> <input type="number" size="4" step="100" />
+        </fieldset>
+      </form>
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <table align="center" border="2" height="100" width="400">
+      <tr>
+        <th>Product</th>
+        <th>Part Number</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Subtotal</th>
+      </tr>
+
+      <tr>
+        <td>EconoBox</td>
+        <td>LB100</td>
+        <td>3</td>
+        <td>R5</td>
+        <td>R15</td>
+      </tr>
+
+      <tr>
+        <td>Standard Box</td>
+        <td>LB200</td>
+        <td>4</td>
+        <td>R10</td>
+        <td>R40</td>
+      </tr>
+
+      <tr>
+        <td>Premium Box/TD></td>
+        <td>LB300</td>
+        <td>1</td>
+        <td>R15</td>
+        <td>R15</td>
+      </tr>
+
+      <tr>
+        <td>Deluxe Box/TD></td>
+        <td>LB400</td>
+        <td>0</td>
+        <td>R20</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Super Deluxe Box/TD></td>
+        <td>LB500</td>
+        <td>1</td>
+        <td>R30</td>
+        <td>R30</td>
+      </tr>
+
+      <tr>
+        <td colspan="4" align="right">Total:</td>
+        <td>R100</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+
+    <div style="margin-left: 40%; margin-right: 50%; width: 800px;">
+      <b>Credit Card Details:</b> <br />
+      Card Type: <br />
+      <input type="radio" /> Mastercard &nbsp; &nbsp; &nbsp; &nbsp; Card
+      Number:<input type="number" size="4" /> <br />
+      <input type="radio" />Visa &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+      &nbsp; &nbsp; &nbsp;&nbsp; Expiry date:<input
+        type="date"
+        id="date"
+        value="date"
+      />
+      <br />
+      <input type="radio" />American Express <br />
+      <input type="radio" />Diners Club
+      <p></p>
+      <p></p>
+
+      <b>Delivery Address:</b> <br />
+      <textarea placeholder="Write your address." cols="15" rows="4"></textarea>
+      <br />
+      <br />
+
+      <button type="reset">Clear Form</button>
+      <button type="submit">Send Order</button> <br />
+      <br />
+      Form created by &copy; Wasif Rahman
+    </div>
+  </body>
+</html>

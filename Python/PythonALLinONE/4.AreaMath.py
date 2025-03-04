@@ -52,6 +52,27 @@ hypotenuse = math.sqrt(pow(base, 2) + pow(perpendicular, 2))
 print(f"The hypotenuse of the right angle triangle is: {hypotenuse}cm")
 
 
+#!area cal
+length = int(input("Enter the length of a rectangular: "))
+width = float(input("Enter the width of a rectangular: "))
+area = length * width
+print(f"The area is {area}cm^2.")
+
+#!Volume cal
+length = int(input("Enter the length of a rectangular: "))
+width = float(input("Enter the width of a rectangular: "))
+height = float(input("Enter the width of a rectangular: "))
+volume = length * width * height
+print(f"The volume is {volume}cm^3.")
+
+#!Shopping cart
+item = input("What item would you like to buy?: ")
+price = float(input("What is the price?: "))
+quantity = int(input("How many would you like?: "))
+
+total = price * quantity
+print(f"You have bought {quantity} {item}/s")
+print(f"Your total is : ${round(total, 2)}.")  
 
 
 

@@ -33,6 +33,16 @@ print(f"Hello {name}")
 print(f"I like {food}.")
 print(f"Your email is {email}.")
 
+#!
+"""Malti Line"""
+print("Subscribe Now", end=",  ")
+print("Wasif Rahman")
+print("Wasif Rahman", "is a boss")
+print("c:\\narry")
+print("c:\"wasif\"")
+print("c:\'narry")
+print("Wasif Rahman \ngood boy \t1\n")#comment after
+
 
 #*** Integer (Whole number)
 #Integer is a whole number
@@ -71,6 +81,17 @@ print(math)
 results = age + actual_age + math
 print(results)
 print(type(results))
+#!
+var1 = "Hello"
+print(var1)
+var2 = "4"
+var3 = "36.7"
+var4 = "World"
+print(type(var1)) #to find the type
+print(var1 + var4)
+print(int(var2) + float(var3)) #type casting str() int() float()
+print(10 * str(int(var2) + float(var3))) #copy for 10 times as a string
+print(10 * "Hello Wasif\n")
 
 #*** Variable (Container)
 #Variable name can't start with number
@@ -206,7 +227,7 @@ else:
 
 
 
-#***Tips: 
+#***Tips:
 x=1
 y=2
 z=3

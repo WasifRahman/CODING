@@ -1,7 +1,7 @@
 #BMI 1 person
 name = input("Enter Your name= ")
-height = float(input("Enter your height= "))
-weight = float(input("Enter your weight= "))
+height = float(input("Enter your height(in meter)= ")) #in meter
+weight = float(input("Enter your weight(in kg)= ")) #in kg
 
 bmi = weight / (height**2)
 print(name)

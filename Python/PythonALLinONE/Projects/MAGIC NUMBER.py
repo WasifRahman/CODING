@@ -1,6 +1,6 @@
 uname=input("Username: ")
 print("Hi,",uname+".",)
-a=input("Do you want to play a game,"+uname+"? [Y/N]")
+a=input("Do you want to play a game,"+uname+"? [y/n]")
 if a == "y":
     print("Take a number between 1 to 10," + uname)
     print("Multiply it by 2," + uname)

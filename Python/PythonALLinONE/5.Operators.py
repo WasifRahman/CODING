@@ -41,10 +41,8 @@ print(abs(-4))
 print(pow(2, 3))  #To the power
 print(sqrt(25))   #Square Root
 print(round(5.8)) #Closest whole number
-
-print(floor(3.7)) #nicher closest num
-print(ceil(3.7))  #Uporer closest num
-
+print(floor(5.8)) #Closest under whole number
+print(ceil(5.8))  #Closest upper whole number
 
 #!BUILD_IN FUNCTIONS
 x= 3.14

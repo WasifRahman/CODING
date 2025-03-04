@@ -6,7 +6,7 @@ tries = 1
 uname = input("Hello, What is your name?")
 print("Hello", uname + ".",)
 
-question = input("Would you like to play a game?[Y/N]")
+question = input("Would you like to play a game?[y/n]")
 if question == "n":
     print("oh..okay")
 

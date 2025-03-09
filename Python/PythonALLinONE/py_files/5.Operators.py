@@ -343,6 +343,172 @@ print(p1 + p2) #Output: (3000)
 
 
 
+#*********************************** Types of Operators in Python(AI):********************
+
+# 1. **Arithmetic Operators**
+# 2. **Comparison (Relational) Operators**
+# 3. **Logical Operators**
+# 4. **Bitwise Operators**
+# 5. **Assignment Operators**
+# 6. **Identity Operators**
+# 7. **Membership Operators**
+
+
+#*** 1. Arithmetic Operators
+
+#$ | Operator | Description               | Example  |
+#$ | -------- | ------------------------- | -------- |
+#$ | `+`      | Addition                  | `a + b`  |
+#$ | `-`      | Subtraction               | `a - b`  |
+#$ | `*`      | Multiplication            | `a * b`  |
+#$ | `/`      | Division                  | `a / b`  |
+#$ | `%`      | Modulus (Remainder)       | `a % b`  |
+#$ | `**`     | Exponentiation (Power)    | `a ** b` |
+#$ | `//`     | Floor Division (Quotient) | `a // b` |
+
+
+#*** 2. Comparison (Relational) Operators
+
+#! Used to compare values and return `True` or `False`.
+
+#$ | Operator | Description              | Example  |
+#$ | -------- | ------------------------ | -------- |
+#$ | `==`     | Equal to                 | `a == b` |
+#$ | `!=`     | Not equal to             | `a != b` |
+#$ | `>`      | Greater than             | `a > b`  |
+#$ | `<`      | Less than                | `a < b`  |
+#$ | `>=`     | Greater than or equal to | `a >= b` |
+#$ | `<=`     | Less than or equal to    | `a <= b` |
+
+#@ Example:
+
+a = 10
+b = 5
+
+print(a == b)  # Output: False
+print(a != b)  # Output: True
+print(a > b)   # Output: True
+print(a < b)   # Output: False
+print(a >= b)  # Output: True
+print(a <= b)  # Output: False
+
+#*** 3. Logical Operators
+
+#! Used to combine conditional statements.
+
+#$ | Operator | Description                                    | Example            |
+#$ | -------- | ---------------------------------------------- | ------------------ |
+#$ | `and`    | Returns True if both conditions are True       | `a > 5 and b < 10` |
+#$ | `or`     | Returns True if at least one condition is True | `a > 5 or b > 10`  |
+#$ | `not`    | Reverses the result                            | `not(a > 5)`       |
+
+#@ Example:
+
+a = 10
+b = 5
+
+print(a > 5 and b < 10)  # Output: True
+print(a > 5 or b > 10)   # Output: True
+print(not (a > 5))       # Output: False
+
+
+#*** 4. Bitwise Operators
+
+#!Used to perform bitwise operations on binary numbers.
+
+#$ | Operator | Description | Example    |     |     |
+#$ | -------- | ----------- | ---------- | --- | --- |
+#$ | `&`      | Bitwise AND | `a & b`    |     |     |
+#$ | \`       | \`          | Bitwise OR | \`a | b\` |
+#$ | `^`      | Bitwise XOR | `a ^ b`    |     |     |
+#$ | `~`      | Bitwise NOT | `~a`       |     |     |
+#$ | `<<`     | Left Shift  | `a << 2`   |     |     |
+#$ | `>>`     | Right Shift | `a >> 2`   |     |     |
+
+#@ Example:
+
+a = 5  # 101 in binary
+b = 3  # 011 in binary
+
+print(a & b)  # Output: 1 (001)
+print(a | b)  # Output: 7 (111)
+print(a ^ b)  # Output: 6 (110)
+print(~a)     # Output: -6
+print(a << 1) # Output: 10 (1010)
+print(a >> 1) # Output: 2 (10)
+
+
+#*** 5. Assignment Operators
+
+#! Used to assign values to variables.
+
+#$ | Operator | Example   | Equivalent To |
+#$ | -------- | --------- | ------------- |
+#$ | `=`      | `a = 5`   | `a = 5`       |
+#$ | `+=`     | `a += 2`  | `a = a + 2`   |
+#$ | `-=`     | `a -= 2`  | `a = a - 2`   |
+#$ | `*=`     | `a *= 2`  | `a = a * 2`   |
+#$ | `/=`     | `a /= 2`  | `a = a / 2`   |
+#$ | `%=`     | `a %= 2`  | `a = a % 2`   |
+#$ | `**=`    | `a **= 2` | `a = a ** 2`  |
+#$ | `//=`    | `a //= 2` | `a = a // 2`  |
+
+#@ Example:
+
+a = 10
+a += 5  # Equivalent to a = a + 5
+print(a)  # Output: 15
+
+
+#*** 6. Identity Operators
+
+#! Used to compare memory locations of objects.
+
+#$ | Operator | Description                               | Example      |
+#$ | -------- | ----------------------------------------- | ------------ |
+#$ | `is`     | Returns True if objects are identical     | `a is b`     |
+#$ | `is not` | Returns True if objects are not identical | `a is not b` |
+
+#@ Example:
+a = [1, 2, 3]
+b = a
+c = [1, 2, 3]
+
+print(a is b)  # Output: True (same memory location)
+print(a is c)  # Output: False (different memory locations)
+
+
+#*** 7. Membership Operators
+
+#!Used to check if a value exists in a sequence (list, tuple, string, etc.).
+
+#$ | Operator | Description                            | Example      |
+#$ | -------- | -------------------------------------- | ------------ |
+#$ | `in`     | Returns True if a value is present     | `x in y`     |
+#$| `not in` | Returns True if a value is not present | `x not in y` |
+
+#@ Example:
+nums = [1, 2, 3, 4]
+print(3 in nums)  # Output: True
+print(5 not in nums)  # Output: True
+
+
+
+#@ Summary Table
+#$ | Operator Type | Operators                                       |                           |
+#$ | ------------- | ----------------------------------------------- | ------------------------- |
+#$ | Arithmetic    | `+`, `-`, `*`, `/`, `%`, `**`, `//`             |                           |
+#$ | Comparison    | `==`, `!=`, `>`, `<`, `>=`, `<=`                |                           |
+#$ | Logical       | `and`, `or`, `not`                              |                           |
+#$ | Bitwise       | `&`, \`                                         | `, `^`, `\~`, `<<`, `>>\` |
+#$ | Assignment    | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `**=`, `//=` |                           |
+#$ | Identity      | `is`, `is not`                                  |                           |
+#$ | Membership    | `in`, `not in`                                  |                           |
+
+#? This guide covers all types of operators in Python, focusing on beginner-friendly explanations and gradually introducing advanced topics.
+
+
+
 
 
 

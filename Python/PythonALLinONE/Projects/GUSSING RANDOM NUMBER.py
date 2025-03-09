@@ -1,6 +1,6 @@
-import random
+import random #or, from random import randint(memeory save)
 
-number = random.randint(1, 10)
+number = random.randint(1, 10) #or, number=randint(1,10)
 tries = 1
 
 uname = input("Hello, What is your name?")

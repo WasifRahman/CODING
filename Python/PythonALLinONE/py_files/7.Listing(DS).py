@@ -10,27 +10,28 @@ print(type(camping_list))
 
 camp_sit = ["Crystal Lake", 404, 89.3, True] #string , integer, float, boolean
 
-you= camping_list[2] #camping_list[-3] 
-me = camping_list[0] #camping_list[-5]
-print(you) #print the value of the index
-print(me) #print the value of the index
-print(camping_list) #print the full list
-print(camp_sit[-1]) #True
-print(camp_sit[0:3]) #0 to 2
-print(camp_sit[0:3:2]) #character skip 2
-print(camp_sit[::]) #by default 0:full:1
-print(camp_sit[0:180]) #if we give more than the length of the string it will print the full string
-print(camping_list[0:5]) #0 to 4
-print(camping_list[-1]) #print the last element
-print(len(camping_list)) #length of the list
-print(camping_list[-4:]) #print the last 4 element
-print(camping_list[-5:]) #print the last 5 element
-print(camping_list[-5:-1]) #print the 0 to 3 element
-print(camping_list[-5:-1:2]) #print the 0 to 3 element with skip 2
-print(camping_list[-5:5]) #print the 0 to 4 element
-print(camping_list[-5:5:2]) #print the 0 to 4 element with skip 2
-print(camping_list[-5:180]) #print the 0 to 4 element
-print(camping_list[-5:180:2]) #print the 0 to 4 element with skip 2
+you= camping_list[2] #?camping_list[-3] 
+me = camping_list[0] #?camping_list[-5]
+print(you) #?print the value of the index
+print(me) #?print the value of the index
+print(camping_list) #?print the full list
+print(camp_sit[-1]) #?True
+#***List Slicing
+print(camp_sit[0:3]) #?0 to 2 
+print(camp_sit[0:3:2]) #?character skip 2
+print(camp_sit[::]) #?by default 0:full:1
+print(camp_sit[0:180]) #?if we give more than the length of the string it will print the full string
+print(camping_list[0:5]) #?0 to 4
+print(camping_list[-1]) #?print the last element
+print(len(camping_list)) #?length of the list
+print(camping_list[-4:]) #?print the last 4 element
+print(camping_list[-5:]) #?print the last 5 element
+print(camping_list[-5:-1]) #?print the 0 to 3 element
+print(camping_list[-5:-1:2]) #?print the 0 to 3 element with skip 2
+print(camping_list[-5:5]) #?print the 0 to 4 element
+print(camping_list[-5:5:2]) #?print the 0 to 4 element with skip 2
+print(camping_list[-5:180]) #?print the 0 to 4 element
+print(camping_list[-5:180:2]) #?print the 0 to 4 element with skip 2
 
 
 #!===================EXERCISE 1
@@ -239,7 +240,137 @@ squares = [i**2 if i%2 == 0 else i**3 for i in range(10)]
 print(squares)
 
 
+#***LIST AS INPUT FROM USER***
 
+#@SUM of input values and store in the list
+n = input("Enter the number of elements: ")
+#$10 20 30 40 50
+list = n.split() #?split the input
+#$(10,20,30,40,50) and store in the list
+print(list) #?print the list
+sum = 0
+for num in list: 
+    sum += int(num) #?convert the string to integer
+print(sum) #?print the sum of the list
+
+#@Number of words,letters and digits in the list
+text = input("Enter the elements: ") #$ My name is 123
+number_of_letters = 0
+number_of_words = 0
+number_of_digits = 0
+
+for i in text:
+    i = i.lower()
+    if i>='a' and i<='z':
+        number_of_letters += 1
+    if i>='0' and i<='9':
+        number_of_digits += 1
+    if i == ' ':
+        number_of_words += 1
+print("Number of Letters:", number_of_letters)
+print("Number of Words:",number_of_words+1)
+print("Number of Digits:",number_of_digits)
+
+#************Projects//////
+#!===============================
+"""
+Project 1: Task Manager System
+Problem Statement:
+Create a simple task manager where a user can:
+- Add a task to a list.
+- Remove a task by name.
+- Mark a task as complete.
+- View all tasks (completed and pending).
+- Exit the program.
+"""
+
+tasks = []
+def add_task(task):
+    tasks.append({'task': task, 'completed': False})
+
+def remove_task(task):
+    global tasks
+    tasks = [t for t in tasks if t['task'] != task]
+
+def mark_complete(task):
+    for t in tasks:
+        if t['task'] == task:
+            t['completed'] = True
+
+def view_tasks():
+    for t in tasks:
+        status = "Completed" if t['completed'] else "Pending"
+        print(f"{t['task']} - {status}")
+
+#@ Example usage
+add_task("Buy groceries")
+add_task("Complete Python project")
+mark_complete("Buy groceries")
+view_tasks()
+
+#!=======================
+"""
+Project 2: Grocery Shopping List Manager
+Problem Statement:
+Create a grocery shopping list application that allows users to:
+- Add items to the list.
+- Remove items from the list.
+- Sort the list alphabetically.
+- View the final list before shopping.
+- Exit the program.
+"""
+
+grocery_list = []
+
+def add_item(item):
+    grocery_list.append(item)
+
+def remove_item(item):
+    if item in grocery_list:
+        grocery_list.remove(item)
+
+def sort_list():
+    grocery_list.sort()
+
+def view_list():
+    print("Grocery List:", grocery_list)
+#@ Example usage
+add_item("Milk")
+add_item("Eggs")
+add_item("Bread")
+sort_list()
+view_list()
+
+#!=======================
+"""
+Project 3: Student Grades Tracker
+Problem Statement:
+Build a student grade tracker where:
+- The teacher can add student names and their grades.
+- The teacher can update a student’s grade.
+- If a student's grade is below 40%, mark them as Failing.
+- If a student's grade is above 90%, mark them as Top Performer.
+- View all students with their grades and performance status.
+"""
+
+students = {}
+
+def add_student(name, grade):
+    students[name] = grade
+
+def update_grade(name, grade):
+    if name in students:
+        students[name] = grade
+
+def view_students():
+    for name, grade in students.items():
+        status = "Top Performer" if grade > 90 else "Failing" if grade < 40 else "Normal"
+        print(f"{name}: {grade}% - {status}")
+#@ Example usage
+add_student("Alice", 95)
+add_student("Bob", 35)
+add_student("Charlie", 70)
+view_students()
 
 
 
